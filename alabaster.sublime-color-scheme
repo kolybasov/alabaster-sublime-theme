@@ -1,0 +1,76 @@
+{
+    "name": "Alabaster",
+    "variables": {
+        "white": "#BBBBBB",
+        "black": "#000000",
+        "blue": "#325CC0",
+        "cyan": "#0083B2",
+        "green": "#448C27",
+        "magenta": "#7A3E9D",
+        "red": "#AA3731",
+        "yellow": "#FFBC5D",
+        "brightWhite": "#FFFFFF",
+        "brightBlack": "#777777",
+        "brightBlue": "#007ACC",
+        "brightCyan": "#00AACB",
+        "brightGreen": "#60CB00",
+        "brightMagenta": "#E64CE6",
+        "brightRed": "#F05050",
+        "brightYellow": "#FFD9A6"
+    },
+    "globals": {
+        // Globals
+        "background": "#F7F7F7",
+        "foreground": "var(black)",
+        "caret": "var(brightBlue)",
+        "line_highlight": "#F0F0F0",
+        // Gutter
+        "gutter": "#F0F0F0",
+        "gutter_foreground": "var(brightBlack)",
+        // Selection
+        "selection": "#BFDBFE",
+    },
+    "rules": [
+        {
+            "name": "Comments",
+            "scope": "comment,punctuation.definition.comment",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Strings",
+            "scope": "string,string.regexp,constant.other",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Strings: Escape Sequences",
+            "scope": "constant.character.escape",
+            "foreground": "var(brightBlack)"
+        },
+        {
+            "name": "Numbers, Characters",
+            "scope": "constant.numeric,constant.character,constant.keyword,constant",
+            "foreground": "var(magenta)"
+        },
+        {
+            "name": "Global definitions",
+            "scope": "entity.name",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation",
+            "foreground": "var(brightBlack)"
+        },
+        {
+            "name": "Keywords",
+            "scope": "keyword.control",
+            "foreground": "var(magenta)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "#96000014",
+            "background": "#660000"
+        }
+    ]
+}
